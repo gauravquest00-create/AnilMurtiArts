@@ -1,0 +1,22 @@
+{
+  "short_name": "AnilMurtiArt",
+  "name": "Anil Murti Art - Handcrafted Marble Murti",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0B0B0C",
+  "theme_color": "#141416",
+  "display": "standalone",
+  "orientation": "portrait"
+}

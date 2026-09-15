@@ -1,0 +1,51 @@
+.back-to-top-btn {
+  position: fixed;
+  bottom: 88px;
+  right: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--text-main);
+  border: 1.5px solid var(--border-gold);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 997;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  background: var(--gold-primary);
+  color: #FFFFFF;
+  border-color: var(--gold-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(184, 134, 11, 0.3);
+}
+
+.back-top-icon {
+  font-size: 20px;
+}
+
+@media (max-width: 820px) {
+  .back-to-top-btn {
+    bottom: 78px;
+    right: 22px;
+    width: 36px;
+    height: 36px;
+  }
+  .back-top-icon {
+    font-size: 18px;
+  }
+}

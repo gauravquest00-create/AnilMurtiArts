@@ -1,0 +1,278 @@
+.admin-collection-form-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 980px;
+}
+
+.form-header-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--gold-primary);
+  background: #FFFFFF;
+  padding: 7px 14px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-subtle);
+  font-weight: 600;
+}
+
+.form-page-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: var(--text-main);
+}
+
+.admin-form-error-banner {
+  background: #FEE2E2;
+  border: 1px solid #FCA5A5;
+  color: #DC2626;
+  padding: 12px 16px;
+  border-radius: var(--radius-xs);
+  font-size: 13.5px;
+}
+
+.collection-main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-section-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.section-card-heading {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--gold-primary);
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-card-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 10px;
+}
+
+.section-card-header-flex .section-card-heading {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.image-count-tag {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.admin-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-form-field label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.admin-form-field input, .admin-form-field select, .admin-form-field textarea {
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  padding: 10px 13px;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.admin-form-field input:focus, .admin-form-field select:focus, .admin-form-field textarea:focus {
+  border-color: var(--gold-primary);
+  background: #FFFFFF;
+}
+
+.settings-toggles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.checkbox-toggle-card {
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  padding: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkbox-toggle-card input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--gold-primary);
+  margin-top: 2px;
+}
+
+.checkbox-toggle-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.checkbox-toggle-card strong {
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+.checkbox-toggle-card span {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.image-uploader-zone {
+  margin-bottom: 20px;
+}
+
+.upload-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-input);
+  border: 2px dashed var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 36px 20px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.upload-dropzone:hover {
+  border-color: var(--gold-primary);
+  background: #FFFFFF;
+}
+
+.upload-cloud-icon {
+  font-size: 38px;
+  color: var(--gold-primary);
+  margin-bottom: 8px;
+}
+
+.upload-prompt-main {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.upload-prompt-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.uploading-progress-msg {
+  text-align: center;
+  color: var(--gold-primary);
+  font-size: 13.5px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.images-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.image-preview-tile {
+  position: relative;
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  height: 180px;
+}
+
+.image-preview-tile.primary-tile {
+  border: 2.5px solid var(--gold-primary);
+}
+
+.image-preview-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile-overlay-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.tile-btn {
+  font-size: 11.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.tile-btn.is-primary-btn {
+  color: var(--gold-primary);
+}
+
+.delete-tile-btn {
+  color: #DC2626;
+}
+
+.form-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+@media (max-width: 820px) {
+  .form-grid-2, .form-grid-3, .settings-toggles-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "anil-murti-art",
+  "version": "1.0.0",
+  "description": "Production-grade full-stack MERN system for Anil Murti Art - Premium Handcrafted Marble Sculptures",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n BACKEND,FRONTEND,ADMIN -c blue,green,magenta \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\" \"npm --prefix adminpanel run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:admin": "npm --prefix adminpanel run dev",
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install && npm --prefix adminpanel install",
+    "build": "npm --prefix frontend run build && npm --prefix adminpanel run build",
+    "start": "npm --prefix backend start"
+  },
+  "keywords": [
+    "mern",
+    "marble-murti",
+    "anil-murti-art",
+    "react",
+    "vite",
+    "nodejs",
+    "express",
+    "mongodb",
+    "cloudinary"
+  ],
+  "author": "Anil Murti Art Architect",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * Generates dynamic WhatsApp message link for a collection
+ */
+export const generateWhatsAppLink = (collection, customMessage = '') => {
+  const phone = '917232879421'; // Anil Murti Art Official Studio Contact
+  
+  if (!collection) {
+    const genericText = encodeURIComponent(
+      customMessage ||
+        'Namaste Anil Murti Art, I would like to inquire about handcrafted marble idols and custom bespoke artwork.'
+    );
+    return `https://wa.me/${phone}?text=${genericText}`;
+  }
+
+  const name = collection.name || 'Marble Artwork';
+  const material = collection.material || 'White Makrana Marble';
+  const height = collection.height || 'Custom';
+  const painting = collection.painting || '24K Gold Foil';
+
+  let message = `Namaste Anil Murti Art Team,
+
+I am interested in acquiring this marble masterpiece:
+
+*Collection:* ${name}
+*Material:* ${material}
+*Height:* ${height}
+*Finish/Painting:* ${painting}
+
+Please share availability, pricing, and sacred delivery timeline.`;
+
+  if (customMessage) {
+    message += `
+
+*Additional Note:* ${customMessage}`;
+  }
+
+  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+};
