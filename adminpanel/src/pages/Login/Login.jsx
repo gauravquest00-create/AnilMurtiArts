@@ -94,10 +94,7 @@ const Login = () => {
           </button>
         </form>
 
-        <div className="login-demo-notice">
-          <span>Default System Admin:</span>
-          <code>admin@anilmurtiart.com / Admin@12345</code>
-        </div>
+        
       </div>
     </div>
   );
