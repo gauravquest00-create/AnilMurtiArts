@@ -48,7 +48,7 @@ const Contact = () => {
           <span className="contact-hero-sub">DIRECT ARTISAN INQUIRY</span>
           <h1 className="contact-hero-title">Contact Anil Murti Art</h1>
           <p className="contact-hero-desc">
-            Visit our studio in Jaipur, Rajasthan, or connect with our curation team for worldwide shipments and custom deity commissions.
+            Visit our studio in Alwar, Rajasthan, or connect with our curation team for worldwide shipments and custom deity commissions.
           </p>
         </div>
       </div>
@@ -62,22 +62,19 @@ const Contact = () => {
               <FiMapPin className="info-icon" />
               <div>
                 <strong>Sculpture Studio:</strong>
-                <p>Moorti Mohalla, Khazane Walon Ka Rasta, Jaipur, Rajasthan 302001, India</p>
+                <p>AASHA SINGH COLONY, STATION ROAD, RAMGARH, ALWAR, Rajasthan - 301026</p>
               </div>
             </li>
             <li>
               <FiPhone className="info-icon" />
               <div>
                 <strong>Direct Calls:</strong>
-                <p>+91 98290 12345 / +91 98290 67890</p>
+                <p>+91 72328 79421 / +91 9649334152</p>
               </div>
             </li>
             <li>
               <FiMail className="info-icon" />
-              <div>
-                <strong>Email:</strong>
-                <p>contact@anilmurtiart.com</p>
-              </div>
+              
             </li>
             <li>
               <FiClock className="info-icon" />
