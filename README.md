@@ -141,13 +141,13 @@ The `backend/.env` file is pre-configured with the required MongoDB Atlas cluste
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://Archinova_87:Realme14PRO%2B%2B@cluster0.qdqujbw.mongodb.net/anilmurtiarts?retryWrites=true&w=majority
-JWT_SECRET=gaUR4v3st4t3_sup3r_s3cur3_k3y_2026
+MONGODB_URI=
+JWT_SECRET=
 JWT_EXPIRES_IN=7d
 NODE_ENV=development
-CLOUDINARY_CLOUD_NAME=dhnkbbidv
-CLOUDINARY_API_KEY=831413759898431
-CLOUDINARY_API_SECRET=dL9cU9R1bKjkgx3Low_LOWvMhAY
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
 CLIENT_URL=http://localhost:5173
 ADMIN_URL=http://localhost:5174
 ```
